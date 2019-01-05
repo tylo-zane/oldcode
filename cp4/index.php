@@ -9,7 +9,7 @@ error_reporting(E_ALL);
  * based on this input.
  *
  * Required GET parameters (limit to ONE of the following):
- * -command 
+ * -command
  * -emote
  * Output formats:
  * -command requests return JSON
@@ -24,6 +24,7 @@ error_reporting(E_ALL);
 
 $responses = file_get_contents("data.json");
 $responses = json_decode($responses);
+header('Content-Type: text/plain');
 
 if (isset($_GET["command"])) {
     $command = $_GET["command"];
@@ -70,7 +71,6 @@ function handle_command($command, $responses) {
  * @returns {string} - a message based on provided emotion
  */
 function handle_emote($emote) {
-    header('Content-Type: text/plain');
     $sentence = "You let Apathy know that he made you feel ";
     if ($emote === "angry") {
         echo $sentence.$emote;
