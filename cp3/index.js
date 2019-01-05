@@ -16,10 +16,10 @@
   * Initializes the webpage by adding event listeners to each input area.
   */
   function initialize() {
-      sayHello();
-      $("enter-btn").addEventListener("click", getInput);
-      $("enter-btn").click(); // so default cards appear on the page after it is loaded
-      $("text-entry").addEventListener("keyup", function(event) {
+    sayHello();
+    $("enter-btn").addEventListener("click", getInput);
+    $("enter-btn").click(); // so default cards appear on the page after it is loaded
+    $("text-entry").addEventListener("keyup", function(event) {
       if (event.key !== "Enter") {
         return;
       } else {
