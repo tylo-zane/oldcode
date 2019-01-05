@@ -1,42 +1,41 @@
 /*
-    Name: Tyler Marcinyshyn
-    Date: October 24, 2018
-    Section: CSE 154 AF
-	This index.css styles the Pokémon Deck Builder. It causes cards to scroll horizontally
-    and positions all of the page's elements.
+  Name: Tyler Marcinyshyn
+  Date: October 24, 2018
+  Section: CSE 154 AF
+  This index.css styles the Pokémon Deck Builder. It causes cards to scroll horizontally
+  and positions all of the page's elements.
 */
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
-	margin: 0;
-	background-color: #b7b5b5;
+  margin: 0;
+  background-color: #b7b5b5;
 }
 
-
 h1 {
-	font-size: 18pt;
+  font-size: 18pt;
     font-weight: normal;
     margin-bottom: 65px;
     margin-left: 10px;
 }
 
 h2 {
-	margin-top: 15px;
-	margin-left: 20px;
-	font-size: 22pt;
-	display: inline;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 22pt;
+  display: inline;
 }
 
 p, h1, h2 {
-	font-family: Lato, sans-serif;
-	color: white;
+  font-family: Lato, sans-serif;
+  color: white;
 }
 
 header {
-	top: 0;
-	height: 23%;
-	z-index: 1;
+  top: 0;
+  height: 23%;
+  z-index: 1;
     display: flex;
     align-items: flex-end;
 }
@@ -49,25 +48,25 @@ header img {
 }
 
 footer {
-	bottom: 0;
-	height: 12%;
+  bottom: 0;
+  height: 12%;
 }
 
 footer p {
-	padding: 0;
-	margin: 0;
-	margin-left: 33%;
+  padding: 0;
+  margin: 0;
+  margin-left: 33%;
     padding-left: 2px;
 }
 
 footer p:nth-child(1) {
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 header, footer {
-	position: absolute;
-	width: 100%;
-	background-color: black;
+  position: absolute;
+  width: 100%;
+  background-color: black;
     overflow: hidden;
 }
 
@@ -89,93 +88,93 @@ header, footer {
 }
 
 #deck {
-    position: absolute;
-	width: 33%;
-	top: 23%;
-	height: 65%;
-    background-image: linear-gradient(#a0a0a0, #707070);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    overflow-y: scroll;
+  position: absolute;
+  width: 33%;
+  top: 23%;
+  height: 65%;
+  background-image: linear-gradient(#a0a0a0, #707070);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  overflow-y: scroll;
 }
 
 /* Container of the cards returned by AJAX */
 #scroll-wrap {
-	position: absolute;
-	width: 67%;
-	left: 33%;
-    height: 65%;
-	overflow-x: scroll;
-    display: flex;
-    top: 23%;
+  position: absolute;
+  width: 67%;
+  left: 33%;
+  height: 65%;
+  overflow-x: scroll;
+  display: flex;
+  top: 23%;
 }
 
 input {
-    margin-left: 2px;
-	border-radius: 10px 0px 0px 10px;
+  margin-left: 2px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 button {
-	margin-left: 302px;
-	background-color: #e24646;
-	color: white;
-	border-radius: 0px 10px 10px 0px;
+  margin-left: 302px;
+  background-color: #e24646;
+  color: white;
+  border-radius: 0px 10px 10px 0px;
 }
 
 input, button {
-	position: absolute;
-	left: 33%;
-	font-family: Lato, sans-serif;
-	font-size: 16pt;
-	padding: 5px;
-	border: none;
+  position: absolute;
+  left: 33%;
+  font-family: Lato, sans-serif;
+  font-size: 16pt;
+  padding: 5px;
+  border: none;
 }
 
 #input-area {
-    position: absolute;
-    bottom: 0;
-	z-index: 2;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: #444444;
-	overflow-x: hidden;
-	width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #444444;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 #input-area p {
-    margin-left: 10px;
-    display: inline;
+  margin-left: 10px;
+  display: inline;
 }
 
 #jiggly {
-    position: absolute;
-    width: 52px;
-    height: 52px;
-    bottom: 11%;
-    left: 27%;
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  bottom: 11%;
+  left: 27%;
 }
 
 #jiggly img {
-    position: absolute;
-    z-index: 3;
-    width: 52px;
+  position: absolute;
+  z-index: 3;
+  width: 52px;
 }
 
 /* Jigglypuff's speech bubble */
 #bubble {
-    position: fixed;
-    z-index: 3;
-    bottom: 20%;
-    left: 23%;
-	width: 140px;
-	height: auto;
-	padding: 10px;
-	border-radius: 20px 10px;
-	background-color: white;
-    color: black;
+  position: fixed;
+  z-index: 3;
+  bottom: 20%;
+  left: 23%;
+  width: 140px;
+  height: auto;
+  padding: 10px;
+  border-radius: 20px 10px;
+  background-color: white;
+  color: black;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
