@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!--
+     Name: Tyler Marcinyshyn
+     Date: November 7, 2018
+     Section: CSE 154 AF
+     This index.html defines the structure of Conversation Parade. It initializes the text
+     inside the message box and conversation log.
+-->
+
+<html lang="en">
+	<head>
+		<title>Conversation Parade</title>
+		<link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+		<meta charset="utf-8">
+	</head>
+    <body>
+        <header>
+            <!-- Font credit: "International Font of Mystery" by Tomato -->
+            <img src="images/title.png" alt="Conversation Parade">
+        </header>
+        <main>
+            <img src="images/velvet.png" id="velvet" alt="The Velvet Bar">
+            <img src="images/apathy.png" id="apathy" alt="Apathy the Cat">
+            <div id="bubble">
+                <p class="message">Howdy, howdy, howdy! Let's get straight to talking! It's lonely
+                when you're not here, and they don't even feed me well. So, what's happening?</p>
+            </div>
+            <h1>Apathy</h1> <!-- Apathy's name tag -->
+            <section>
+                <div class="container">
+                    <div class="emote" id="angry"><p>angry</p></div>
+                    <div class="emote" id="happy"><p>happy</p></div>
+                    <div class="emote" id="somber"><p>somber</p></div>
+                </div>
+                <input type="text" size="20" id="text-entry" pattern="^[a-zA-Z0-9]+$">
+                <button id="enter-btn">Go!</button>
+                <div id="log">
+                    <p>Welcome to Conversation Parade! Type "help" for more info.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© Tyler Marcinyshyn</p>
+        </footer>
+	</body>
+</html>

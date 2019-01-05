@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!--
+     Name: Tyler Marcinyshyn
+     Date: October 24, 2018
+     Section: CSE 154 AF
+     The body of the Pokémon Deck Builder. It provides a place for the cards returned by
+     AJAX as well as a spot for cards in the user's deck.
+-->
+
+<html lang="en">
+	<head>
+		<title>Pokémon Deck Builder</title>
+		<link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+		<meta charset="utf-8">
+	</head>
+    <body>
+        <header>
+            <img src="logo.png" alt="Pokémon">
+            <h1>Deck Builder</h1>
+            <div id="input-area">
+                <h2>My Deck</h2>
+                <p id="count">0/60</p>
+                <input type="text" size="25" id="text-entry" placeholder="Search for a card...">
+                <button id="enter-btn">Enter</button>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div id="deck">
+                </div>
+                
+                <!-- Jigglypuff displays messages to the user -->
+                <div id="jiggly">
+                    <p id="bubble" class="hidden"></p>
+                    <img src ="jigglypuff.gif" alt="pixel animation of Jigglypuff">
+                </div>
+            </section>
+            <!-- Contains the set of cards returned by AJAX -->
+            <div id="scroll-wrap">
+            </div>
+        </main>
+        <footer>
+            <!-- images licensed under CC BY-SA 3.0 -->
+            <p>All characters and images © The Pokémon Company</p>
+            <p>Pokémon TCG API by Andrew Backes</p>
+        </footer>
+	</body>
+</html>
