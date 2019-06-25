@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tyler Marcinyshyn - Portfolio</title>
+   <link rel="stylesheet" type="text/css" href="carousel.css">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="index.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Tyler Marcinyshyn</h1>
+    <h2>Student ✤ Web Design ✤ UX Design</h2>
+  </header>
+  <main>
+    <nav>
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#other">OTHER</a></li>
+      </ul>
+    </nav>
+    <section id="about">
+      <div id="about-hover">
+        <h3>ABOUT</h3>
+        <p><em>Hello, my name is Tyler Marcinyshyn.</em></p>
+        <p>
+        I'm an intended Informatics major at the University
+        of Washington, where I study web & interaction design. I pride myself on emphasizing visual
+        charm without need for sacrificing the qualities of universal design.
+        </p>
+      </div>
+    </section>
+    <section id="projects">
+      <h3>PROJECTS</h3>
+      <div class="proj-gradient">
+        <div class="carousel">
+          <div class="item carousel-item" id="slide1">
+            <img src="img/convo.png" alt="Game screen depicting a conversation with a cat">
+            <p><a href="convo-parade/index.html">Conversation Parade</a></p>
+          </div>
+          <div class="item carousel-item" id="slide5">
+            <img src="img/builder7.png" alt="Deck save slots, a new feature">
+            <p><a href="https://info340a-wi19.github.io/project-tylo-zane/">Pokémon Deck Builder</a></p>
+          </div>
+          <div class="item carousel-item" id="slide3">
+            <img src="img/eph.png" alt="A screenshot of the game Ephemeralness">
+            <p><a href="dev-blog/index.html">Ephemeralness Dev Blog</a></p>
+          </div>
+          <div class="item carousel-item" id="slide2">
+            <img src="img/block.png" alt="The home page of Block">
+            <p><a href="https://project-block-11.firebaseapp.com/">Block</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="proj-desc">
+        <h4>Description:</h4>
+        <div>
+          <p id="desc">Yo</p>
+        </div>
+        <h4>Skills Showcased:</h4>
+        <div>
+          <p id="skills">HTML, JavaScript, PHP, CSS, Illustration</p>
+        </div>
+      </div>
+    </section>
+    <section id="other">
+      <h3>OTHER</h3>
+      <div class="container">
+        <div class="column">
+          <div class="flex-item">
+            <p id="flex-info">
+            In addition to web design, I am highly passionate about creating art. Most of my
+            works are pencil drawings, which I then scan and color digitally. Here's a sample of
+            what I do:
+            </p>
+          </div>
+          <div class="flex-item">
+            <img src="dev-blog/art.png" alt="Artwork of a colorful, chaotic city">
+            <p>"After Hours"</p>
+          </div>
+        </div>
+        <div class="flex-item column">
+          <img src="img/thing2.png" alt="A gathering of cartoon characters">
+          <p>"Something Wicked"</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Carousel component powered by Materialize</p>
+    <p>©2019 Tyler Marcinyshyn</p>
+    <p></p>
+  </footer>
+</body>
+</html>
