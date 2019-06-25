@@ -56,7 +56,7 @@ section:nth-child(2n + 1) {
 /* 'About' Section */
 
 #about {
-  background-image: url('img/DSC00925.jpg');
+  background-image: url('img/back-img.jpg');
   background-position: 100% 0%;
 	background-size: cover;
 }
