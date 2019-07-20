@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <title>Project Proposal</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+   <header>
+      <img src="image/logo.png" alt="Pokémon logo">
+      <h1>Deck Builder</h1>
+   </header>
+   <main>
+      <section>
+         <h2>The Issue</h2>
+         <p>
+         The <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon_Trading_Card_Game">Pokémon
+         Trading Card Game</a> is a collectible card game centered around Nintendo's Pokémon
+         franchise. It was first released to Japanese territories in 1996. In late 1998,
+         the game made its way overseas thanks to American publisher Wizards of the Coast
+         (best known for their cult hit, Magic: The Gathering).  While the initial release
+         of the Pokémon TCG contained a mere 102 cards, throughout the years, many expansion
+         sets have been implemented. As of 2019, there is a total of 11,000 unique Pokémon cards.
+         A single deck consists of 60 cards which players must then pit against each other in
+         strategic battles.
+         </p>
+         <p>
+         An important element to winning the card game is to build strong decks which allow for
+         strategization. In order to do so, players must search for the specific cards that will
+         best suit their playstyle. Unfortunately, the art of deck building is plagued by
+         unnecessary complications. No easy method exists of exploring the game’s vast log of
+         cards while grouping them together as potential decks. Furthermore, players lack a
+         method of quickly sharing their decks with one another.
+         </p>
+         <p>
+         An API exists containing data on every English Pokémon card. Players can
+         <a href="https://pokemontcg.io/">search this API</a>
+         for the cards they wish to obtain. However, the site does not allow for users to group
+         together sets of 60 cards as “decks”. Instead, the user must save each image file to a
+         folder on their computer. Moreover, there is no efficient method for players to share their
+         deck lineups with one another. Taking a picture of physical cards reduces readability,
+         and simply writing a list of names poses a problem, as many cards exist with the same name.
+         </p>
+      </section>
+      <section>
+         <h2>The Solution</h2>
+         <p>
+         All players of the TCG would benefit immensely from a deck building app, as it would
+         allow for faster building and sharing of decks than ever before. A user simply searches
+         searches for the name or type of card he desires. With a click, said card is added to a new,
+         virtual collection. The user provides a name and ultimately decides what this
+         collection represents; it could be a deck, or simply a list meant for later viewing.
+         If the user creates an account with the site, they may save as many decks as they’d
+         like to its server. Finally, decks could be sent to other users by use of an export
+         feature, which generates a shareable link.
+         </p>
+         <p>
+         An additional application which could facilitate deck sharing is a dedicated social
+         gallery. Users could upload the decks they create for their friends to
+         see. Certain decks (like the ones of professional players) may become featured.
+         A feed and comment system would be implemented to make the app feel more like a community.
+         </p>
+         <p>
+         With the introduction of a deck building app, players no longer need to take the time to search
+         for and record all sixty cards they wish to add to their deck. The process of deck building
+         is streamlined by having every step take place on a single site. Furthemore, the process
+         of deck sharing is facilitated by allowing visual representations of decks to be sent
+         to one another without need for a camera.
+         </p>
+         <h3>Deck Creation Walkthrough</h3>
+         <ol>
+            <li>
+            The user clicks a "login" button and provides his name and password in the text areas
+            which follow.
+            </li>
+            <li>
+            The user enters a term in a text area to query the database of cards.
+            He hits enter. Results are shown.
+            </li>
+            <li>The user clicks on the add button under a card he wishes to add.</li>
+            <li>The user is given a choice of which collection to add to. He selects "New".</li>
+            <li>
+            A text box appears, and the user enters the name of his new deck. He clicks a button to
+            save the deck.
+            </li>
+         </ol>
+         <h3>Deck Sharing Walkthrough</h3>
+         <ol>
+            <li>
+            The user is greeted to a screen displaying all the decks he's created.
+            He clicks on the hamburger menu next to his first deck, revealing a
+            dropdown with options of "Edit deck", "Edit privacy", and "Delete".
+            </li>
+            <li>
+            The user clicks on "Edit privacy". He is prompted with radio buttons that
+            ask if the deck should be made "Public" or "Private". It is currently private.
+            The user selects "Public", and hits the "OK" button.
+            </li>
+            <li>
+            The user clicks on his profile avatar at the top of the screen. It takes him back
+            to his profile page, where his deck is now public for anyone to see.
+            </li>
+            <li>
+            The user clicks on said deck. He is taken to a viewing page which also displays the
+            comments his friends have made on this "post".
+            </li>
+         </ol>
+      </section>
+   </main>
+</body>
+</html>

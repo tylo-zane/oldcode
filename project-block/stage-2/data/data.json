@@ -1,0 +1,66 @@
+{
+	"story": {
+		"story-1": [
+			"You wake up, knowing that you have a project due soon, but you don't know exactly when.",
+			"You grab your phone to check the time and date. Looks like the project is due in two days and you've barely started.",
+			"It's early, and you have time to work.",
+			"What do you do?"
+		],
+		"story-2": [
+			"You start to work on your project. It's rather open ended and you can decide what to do.",
+			"You work for a few hours before realizing you haven't even eaten yet.",
+			"Should you get some take out or make something at home?"
+		],
+		"story-3": [
+			"You decide to stay home and cook food.",
+			"But do you want to cook something quick or go big and make more food"
+		],
+		"story-4": [
+			"You go out to your favorite place nearby",
+			"You happen to see your friend, and they saw you too",
+			"What do you do?"
+		],
+		"ending-1": [
+			"You had a good meal with little to no distractions.",
+			"This allowed you to put your best effort into your work.",
+			"You received a good grade.",
+			"Your Prompt: You put your utmost focus into the task. Try drawing a cat focusing on its prey."
+		],
+		"ending-2": [
+			"Perhaps you should have done something after all. You didn't get a very good grade after rushing near the end.",
+			"Your Prompt: A landscape of a lake would fit, to suit your need of reflection."
+		],
+		"ending-3": [
+			"You went out to eat and got distracted. Maybe joining your friend wasn't the best idea.",
+			"They took you around, and asked for more of your time.",
+			"Being the nice person you are, you obliged them, to the detriment of your time and grade.",
+			"Your Prompt: A detailed study of the zinnia flower."
+		],
+		"ending-4": [
+			"You went out to eat and did not get distracted. You probably could have had a good time.",
+			"But you decided to go home and do your work to the benefits of your grades.",
+			"Your Prompt: An empty classroom, detailed to your liking."
+		]
+ 	},
+ 	"choices": {
+ 		"choice-1": [
+ 			"Start, I guess.",
+ 			"Do nothing."
+ 		],
+ 		"choice-2": [
+ 			"Why not go out?",
+ 			"Stay home"
+ 		],
+ 		"choice-3": [
+ 			"Cook something quickly",
+ 			"It's time for a nice meal"
+ 		],
+ 		"choice-4": [
+ 			"Quickly say hello",
+ 			"Take your time, join them"
+ 		]
+ 	},
+ 	"user": {
+ 		"username": "Caramel"
+ 	}
+}

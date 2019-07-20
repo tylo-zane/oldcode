@@ -12,6 +12,7 @@
   function updateText(index) {
     let skills = document.getElementById('skills');
     let desc = document.getElementById('desc');
+    let link = document.getElementById('view-code');
     if (index == 'slide1') {
       skills.innerText = 'HTML, JavaScript, PHP, CSS, Illustration';
       desc.innerText = "Originally created for CSE 154 as an exercise in PHP programming. " +
@@ -20,6 +21,7 @@
                        "He will respond in different manners depending on the text you input. " +
                        "Using the 'emote' buttons in the lower right corner, you can " +
                        "even communicate how Apathy makes you feel.";
+      link.href = "https://github.com/tylo-zane/portfolio/tree/master/convo-parade";
     } else if (index == 'slide2') {
       skills.innerText = 'HTML, JavaScript, React, Firebase';
       desc.innerText = "A team-based project for INFO 340. Block is a choose-your-own adventure " +
@@ -28,6 +30,7 @@
                        "can register with the site and create their very own stories for others " +
                        "to play. Completion of a story awards the player with a prompt and color " +
                        "palette to assist them in making art.";
+      link.href = "https://github.com/tylo-zane/portfolio/tree/master/project-block";
     } else if (index == 'slide3') {
       skills.innerText = 'HTML, CSS, Illustration';
       desc.innerText = "An outdated development blog for my game project known as " +
@@ -36,8 +39,9 @@
                        "to read (as well as something of a graphical marvel). " +
                        "As this is the first website I ever created, it holds a special " +
                        "place in my heart."
+      link.href = "https://github.com/tylo-zane/portfolio/tree/master/dev-blog";
     } else if (index == 'slide5') {
-      skills.innerText = 'HTML, JavaScript, JQuery, CSS, Responsive Web Design';
+      skills.innerText = 'HTML, JavaScript, JQuery, CSS, Responsive Design';
       desc.innerText = "The Pokémon Deck Builder " +
                        "lets you search a complete database of Pokémon Trading Cards " +
                        "to discover the perfect 'Mon for your dream deck. " +
@@ -45,6 +49,7 @@
                        "upon them. However, because the Deck Builder is a " +
                        "work-in-progress, save slots are fixed to preset names and " +
                        "preview images.";
+      link.href = "https://github.com/tylo-zane/portfolio/tree/master/deck-builder";
     }
   }
 

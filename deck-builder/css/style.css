@@ -1,0 +1,42 @@
+/* Sections of page */
+
+body {
+   margin-left: auto;
+   margin-right: auto;
+   width: 90%;
+}
+
+header {
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: baseline;
+}
+
+main {
+   padding-bottom: 15px;
+}
+
+img {
+   margin-top: 20px;
+   margin-right: 5px;
+}
+
+/* Typography */
+
+h1 {
+   font-size: 15pt;
+   margin: 0;
+}
+
+p, h2, h3 {
+   font-family: Georgia, serif;
+}
+
+/* Responsive layout */
+
+@media (min-width: 768px) {
+   body {
+      width: 65%;
+   }
+}

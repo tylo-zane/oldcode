@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pokémon Deck Builder</title>
+   <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+   <link rel="stylesheet" type="text/css" href="css/index.css"/>
+   <link rel="icon" type="image/png" href="image/icon.png">
+   <meta name="author" content="Tyler Marcinyshyn">
+   <meta name="keywords" content="Pokémon, Pokemon, TCG, trading, card, deck, builder">
+   <meta name="description" content="Utilize a complete Pokémon Card database to create the
+   deck of your dreams">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="js/index.js"></script>
+</head>
+<body>
+   <header>
+      <img src="image/title.png" alt="Pokémon logo">
+      <h1>Deck Builder</h1>
+   </header>
+   <div id="search" role="form" aria-controls="right-panel">
+      <input type="text" size="25" id="search-input" placeholder="Search for a card to add...">
+      <button id="enter-btn">Enter</button>
+   </div>
+   <main>
+      <h2>My Deck</h2>
+      <div id="left-panel">
+         <!-- In future versions, the API will be used to attach text from the cards as alt tags -->
+      </div>
+      <div id="right-panel">
+         <section id="filter" role="option">
+            <h3>Filter ⮞</h3>
+         </section>
+         <p class="warning hidden" aria-live="polite"></p>
+         <section id="cards">
+            <p>Click a card to add/remove it from your deck.</p>
+            <p id="result-count">Showing 0 results.</p>
+            <div class="container">
+               <img src="image/load.png" alt="loading symbol" class="hidden" id="loading-symbol">
+            </div>
+         </section>
+         <div class="deck-container">
+         </div>
+         <button id="back-btn" class="hidden">⮜</button>
+         <button id="new-deck">+</button>
+      </div>
+      <div id="confirmation-area">
+         <button id="cancel-btn">✗</button>
+         <button id="done-btn">Confirm</button>
+      </div>
+   </main>
+   <footer>
+      <!-- images licensed under CC BY-SA 3.0 -->
+      <p>All characters and images © The Pokémon Company</p>
+      <p>Pokémon TCG API by Andrew Backes</p>
+   </footer>
+</body>
+</html>

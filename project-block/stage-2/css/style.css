@@ -1,0 +1,184 @@
+/*Page Styling*/
+
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+}
+
+main {
+	padding-bottom: 90px;
+	overflow: auto;
+	min-height: 100%;
+}
+
+/*Parallax*/
+
+.parallax {
+	background-image: url("../img/header-image.jpg");
+	height: 300px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*Font Styling*/
+
+body {
+	font-family: 'DejaVu Sans Mono', monospace;
+	background-color: black;
+	min-height: 100px;
+	color: white;
+}
+
+h1 {
+	font-family: arya-double, sans-serif;
+	font-weight: 400;
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.3rem;
+}
+
+.parallax > h1 {
+	color: black;
+	font-size: 60px;
+	padding-top: 60px;
+	line-height: 100px;
+}
+
+.footer-text > p {
+	color: #b2b2b2;
+	font-size: .75rem;
+}
+
+.previous {
+	color: #50c45e;
+}
+
+/*Mobile Nav*/
+#sidebar {
+	min-width: 200px;
+	max-width: 200px;
+	height: 100%;
+	position: absolute;	
+	right: 0px;
+	top: 30px;
+	z-index: 1;
+	opacity: 0.9;
+}
+
+nav > ul > li {
+	padding-right: 1rem;
+}
+
+#sidebar.active {
+	margin-right: -250px;
+}
+@media (max-width: 768px) {
+	#sidebar {
+		display: none;
+	}
+	#sidebar.active {
+		margin-right: 0;
+	}
+}
+
+.inventory-item {
+	height: 50px;
+	width: 50px;
+}
+
+/*Image Grid*/
+
+img {
+	height: 300px;
+	width: 400px;
+}
+
+.screenshot:hover {
+	opacity: 0.7;
+}
+
+/*Modal*/
+.modal {
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-img {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+.full-size {
+	float: right;
+	height: 700px;
+	border: 4px solid white;
+}
+
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
+}
+
+/* Modal Close Button */
+.close-cursor {
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.close-cursor:hover, .close-cursor:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*Game*/
+
+.choices {
+	margin-top: 4rem;
+}
+
+.choice:hover {
+	color: #50c45e;
+}
+
+.palette {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+
+/*Footer*/
+
+footer {
+	background-color: #2d2d2d;
+	margin-top: -90px;
+	height: 90px;
+	position: relative;
+}
