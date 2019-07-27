@@ -60,7 +60,7 @@ section:nth-child(2n + 1) {
 /* 'About' Section */
 
 #about {
-  background-image: url('https://raw.githubusercontent.com/tylo-zane/portfolio/master/img/back-img.JPG');
+  background-image: url('img/back-img.jpg');
   background-position: 100% 0%;
 	background-size: cover;
 }
@@ -317,6 +317,10 @@ em {
 
   /* TYPOGRAPHY */
 
+  #projects h3 {
+    padding-bottom: 1rem;
+  }
+
   nav a {
     font-size: 1.5em;
   }
@@ -339,7 +343,6 @@ em {
 
   #about-hover {
     width: 100%;
-    padding: 1.5rem 0;
   }
 
 }
