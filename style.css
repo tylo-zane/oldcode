@@ -3,7 +3,9 @@
 /* CONTENT AREAS */
 
 body {
+  padding:0;
   margin: 0;
+  background-color: #f0f0f0;
 }
 
 header, section, footer {
@@ -30,21 +32,7 @@ footer {
   padding-bottom: 1em;
 }
 
-#about-hover {
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.6);
-  width: 66%;
-  min-height: 215px;
-}
-
 section {
-  background-color: lightgray;
-}
-
-section:nth-child(2n + 1) {
   background-color: silver;
 }
 
@@ -60,9 +48,30 @@ section:nth-child(2n + 1) {
 /* 'About' Section */
 
 #about {
-  background-image: url('https://raw.githubusercontent.com/tylo-zane/portfolio/master/img/back-img.JPG');
-  background-position: 100% 0%;
+  background-image: url('img/seattle_back.PNG');
+  background-position: 0% 0%;
 	background-size: cover;
+  height: 70vh;
+}
+
+#about-portrait {
+  position: absolute;
+  display: inline;
+  top: 2%;
+  right: 5%;
+  height: 70vh;
+  z-index: 2;
+}
+
+#about-hover {
+  position: absolute;
+  bottom: 0;
+  padding: 5% 25% 2% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5),
+                                    rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.725));
 }
 
 /* 'Projects' Section */

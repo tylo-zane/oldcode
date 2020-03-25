@@ -101,3 +101,10 @@
     top: 0;
   }
 }
+
+@media (max-width: 975px) {
+
+  .carousel .carousel-item {
+    width: 85%;
+  }
+}
