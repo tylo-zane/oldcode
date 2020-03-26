@@ -49,7 +49,6 @@ section {
 
 #about {
   background-image: url('img/seattle_back.PNG');
-  background-position: 0% 0%;
 	background-size: cover;
   height: 70vh;
 }
@@ -66,7 +65,7 @@ section {
 #about-hover {
   position: absolute;
   bottom: 0;
-  padding: 5% 25% 2% 0;
+  padding: 5% 0% 2% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -225,7 +224,7 @@ footer p {
 
 #about-hover h3, #about-hover p{
   color: white;
-  padding-right: 3vw;
+  padding-right: 27%;
 }
 
 em {
@@ -318,6 +317,10 @@ em {
     padding-right: 0;
   }
 
+  #about-hover p {
+    padding-right: 30%;
+  }
+
 }
 
 @media (max-width: 675px) {
@@ -328,12 +331,12 @@ em {
     max-width: 100%;
   }
 
-  #about-hover {
-    padding-right: 27.5%;
+  #about-hover p {
+    padding-right: 35%;
   }
 
   #about-portrait {
-    right: 5vw;
+    right: 4vw;
   }
 
   /* TYPOGRAPHY */
@@ -352,18 +355,14 @@ em {
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 414px) {
 
-  #about {
-    background-image: url('img/s2.jpg');
+  #about-hover p {
+    padding-right: 0;
   }
 
-}
-
-@media (max-width: 400px) {
-
-  #about-hover {
-    width: 100%;
+  #about-portrait {
+    z-index: -1;
   }
 
 }

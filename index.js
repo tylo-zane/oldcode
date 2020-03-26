@@ -2,7 +2,7 @@
   "use strict";
 
   document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.carousel'),
+    let elems = document.querySelectorAll('.carousel'),
       onCycleTo = function (ele) {
         updateText(ele.id);
       },
