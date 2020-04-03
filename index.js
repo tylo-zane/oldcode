@@ -21,7 +21,7 @@
                        "He will respond in different manners depending on the text you input. " +
                        "Using the 'emote' buttons in the lower right corner, you can " +
                        "even communicate with Apathy how he has made you feel.";
-      link.href = "https://courses.cs.washington.edu/courses/cse154/cp/18au/cp4/ocellus/index.html";
+      link.href = "https://github.com/tylo-zane/portfolio/tree/master/convo-parade";
     } else if (index == 'slide2') {
       skills.innerText = 'HTML, JavaScript, React, Firebase';
       desc.innerText = "A team-based project for INFO 340. Block is a choose-your-own adventure " +
