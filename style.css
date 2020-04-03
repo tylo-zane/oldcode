@@ -48,7 +48,7 @@ section {
 /* 'About' Section */
 
 #about {
-  background-image: url('img/seattle_back.PNG');
+  background-image: url('img/seattle.png');
   background-repeat: no-repeat;
 	background-size: contain;
   height: 70vh;
@@ -290,8 +290,10 @@ em {
   }
 
   #about-hover {
-    background-image: linear-gradient(rgba(89, 89, 89, 0), rgba(89, 89, 89, 0.7),
+    background-image: linear-gradient(rgba(89, 89, 89, 0), rgba(89, 89, 89, 0.6),
                                       rgba(89, 89, 89, 0.9), rgba(89, 89, 89, 0.95));
+    /* background-image: linear-gradient(rgba(89, 89, 89, 0), rgba(89, 89, 89, 0.5),
+                                      rgb(89, 89, 89), rgb(89, 89, 89)); */
   }
 
   /* NAVIGATION BAR */
