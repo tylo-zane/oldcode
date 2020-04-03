@@ -49,8 +49,10 @@ section {
 
 #about {
   background-image: url('img/seattle_back.PNG');
-	background-size: cover;
+  background-repeat: no-repeat;
+	background-size: contain;
   height: 70vh;
+  min-height: 410px;
 }
 
 #about-portrait {
@@ -58,19 +60,20 @@ section {
   display: inline;
   top: 2%;
   right: 5%;
-  height: 70vh;
+  height: 100%;
   z-index: 2;
 }
 
 #about-hover {
   position: absolute;
   bottom: 0;
+  margin-top: 5%;
   padding: 5% 0% 2% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5),
-                                    rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(rgba(89, 89, 89, 0), rgba(89, 89, 89, 0.5),
+                                    rgb(89, 89, 89), rgb(89, 89, 89));
 }
 
 /* 'Projects' Section */
@@ -277,8 +280,18 @@ em {
     width: 100%;
   }
 
+  #about {
+    background-size: cover;
+    background-position: 33% 0;
+  }
+
   #about-portrait {
     right: 7.5vw;
+  }
+
+  #about-hover {
+    background-image: linear-gradient(rgba(89, 89, 89, 0), rgba(89, 89, 89, 0.7),
+                                      rgba(89, 89, 89, 0.9), rgba(89, 89, 89, 0.95));
   }
 
   /* NAVIGATION BAR */
@@ -358,7 +371,7 @@ em {
 @media (max-width: 414px) {
 
   #about-hover p {
-    padding-right: 0;
+    padding-right: 1rem;
   }
 
   #about-portrait {
