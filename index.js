@@ -7,10 +7,7 @@
   });
 
   function initCarousel() {
-    let indic = document.querySelectorAll('.indicators');
-    if (indic) {
-      indic.forEach(el => el.remove());
-    }
+    removeIndicators();
     let elems = document.querySelectorAll('.carousel'),
       onCycleTo = function (ele) {
         updateText(ele.id);
@@ -53,6 +50,13 @@
                        "work-in-progress, save slots are fixed to preset names and " +
                        "preview images.";
       link.href = "https://github.com/tylo-zane/portfolio/tree/master/deck-builder";
+    }
+  }
+
+  function removeIndicators() {
+    let indic = document.querySelectorAll('.indicators');
+    if (indic) {
+      indic.forEach(el => el.remove());
     }
   }
 
