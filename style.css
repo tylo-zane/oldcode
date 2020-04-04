@@ -265,7 +265,7 @@ em {
   bottom: 1.5rem;
 }
 
-/* Tablets portrait mode */
+/* Tablets */
 @media (max-width: 1024px) {
 
   /* CONTENT AREAS */
@@ -344,6 +344,15 @@ em {
 
 }
 
+/* Tablets portrait mode */
+@media (max-width: 1024px) and (orientation: portrait) {
+
+  #about {
+    min-height: 410px;
+  }
+
+}
+
 /* Low Resolution Tablets*/
 @media (max-width: 767px) {
 
@@ -351,6 +360,10 @@ em {
 
   .column {
     max-width: 100%;
+  }
+
+  #about {
+    min-height: 70vh;
   }
 
   #about-hover p {
@@ -380,12 +393,12 @@ em {
 /* Smartphones */
 @media (max-width: 480px) {
 
-  #about-hover p {
-    padding-right: 1rem;
-  }
-
   #about-portrait {
     z-index: -1;
+  }
+
+  #about-hover p {
+    padding-right: 1rem;
   }
 
 }
