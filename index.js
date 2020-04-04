@@ -6,6 +6,9 @@
     window.addEventListener('resize', initCarousel);
   });
 
+ /**
+  * Initializes the Materialize Carousel
+  */
   function initCarousel() {
     removeIndicators();
     let elems = document.querySelectorAll('.carousel'),
@@ -18,6 +21,10 @@
       });
   }
 
+ /**
+  * Updates displayed text based on the index of the carousel.
+  * @param {string} index - an ID representing the index of the carousel
+  */
   function updateText(index) {
     let skills = document.getElementById('skills');
     let desc = document.getElementById('desc');
@@ -53,6 +60,9 @@
     }
   }
 
+ /**
+  * Removes all instances of carousel indicators
+  */
   function removeIndicators() {
     let indic = document.querySelectorAll('.indicators');
     if (indic) {
