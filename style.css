@@ -281,7 +281,7 @@ em {
   }
 
   #about {
-    min-height: 425px;
+    min-height: 70vh;
     background-size: cover;
     background-position: 33% 0;
   }
