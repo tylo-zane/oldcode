@@ -99,6 +99,10 @@ section {
   margin-right: auto;
 }
 
+.item {
+  width: 60%;
+}
+
 .item, .flex-item {
   background-color: white;
   text-align: center;
