@@ -40,12 +40,12 @@
       link.href = "https://github.com/tylo-zane/portfolio/tree/master/convo-parade";
     } else if (index == 'slide2') {
       skills.innerText = 'HTML, JavaScript, React, Firebase';
-      desc.innerText = "A team-based project for INFO 340. Block is a choose-your-own adventure " +
-                       "game with the goal of helping artists work through their creator's " +
+      desc.innerText = "Block is a choose-your-own adventure " +
+                       "game with the goal of helping artists work through their artist's " +
                        "block. Using the account creation services provided by Firebase, users " +
-                       "can register with the site and create their very own stories for others " +
-                       "to play. Completion of a story awards the player with a prompt and color " +
-                       "palette to assist them in making art.";
+                       "can register with the site and publish their own stories for others " +
+                       "to play. Completion of a story awards the player with prompts for"
+                       "assisting them in creating art.";
       link.href = "https://github.com/tylo-zane/portfolio/tree/master/project-block";
     } else if (index == 'slide3') {
       skills.innerText = 'HTML, JavaScript, JQuery, CSS, Responsive Design';

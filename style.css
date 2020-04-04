@@ -51,7 +51,6 @@ section {
   background-image: url('img/seattle.png');
   background-repeat: no-repeat;
 	background-size: contain;
-  height: 70vh;
   min-height: 410px;
 }
 
@@ -266,7 +265,8 @@ em {
   bottom: 1.5rem;
 }
 
-@media (max-width: 975px) {
+/* Tablets portrait mode */
+@media (max-width: 1024px) {
 
   /* CONTENT AREAS */
 
@@ -291,7 +291,7 @@ em {
 
   #about-hover {
     background-image: linear-gradient(rgba(89, 89, 89, 0), rgba(89, 89, 89, 0.6),
-                                      rgba(89, 89, 89, 0.9), rgba(89, 89, 89, 0.95));
+                                      rgba(89, 89, 89, 0.9), rgba(89, 89, 89, 0.9));
     /* background-image: linear-gradient(rgba(89, 89, 89, 0), rgba(89, 89, 89, 0.5),
                                       rgb(89, 89, 89), rgb(89, 89, 89)); */
   }
@@ -334,11 +334,17 @@ em {
 
   #about-hover p {
     padding-right: 30%;
+    padding-top: 0.25em;
+  }
+
+  #about-hover h3 {
+    padding-top: 1em;
   }
 
 }
 
-@media (max-width: 675px) {
+/* Low Resolution Tablets*/
+@media (max-width: 767px) {
 
   /* CONTENT AREAS */
 
@@ -370,7 +376,8 @@ em {
 
 }
 
-@media (max-width: 414px) {
+/* Smartphones */
+@media (max-width: 480px) {
 
   #about-hover p {
     padding-right: 1rem;
