@@ -2,12 +2,24 @@
   "use strict";
 
   document.addEventListener('DOMContentLoaded', function () {
+    initCarousel();
+    window.addEventListener('resize', initCarousel);
+  });
+
+  function initCarousel() {
+    let indic = document.querySelectorAll('.indicators');
+    if (indic) {
+      indic.forEach(el => el.remove());
+    }
     let elems = document.querySelectorAll('.carousel'),
       onCycleTo = function (ele) {
         updateText(ele.id);
       },
-      instances = M.Carousel.init(elems, { indicators: true, onCycleTo: onCycleTo });
-  });
+      instances = M.Carousel.init(elems, {
+        indicators: true,
+        onCycleTo: onCycleTo
+      });
+  }
 
   function updateText(index) {
     let skills = document.getElementById('skills');
@@ -32,15 +44,6 @@
                        "palette to assist them in making art.";
       link.href = "https://github.com/tylo-zane/portfolio/tree/master/project-block";
     } else if (index == 'slide3') {
-      skills.innerText = 'HTML, CSS, Illustration';
-      desc.innerText = "An outdated development blog for my game project known as " +
-                       '"Ephemeralness". ' + "While the game hasn't " +
-                       "been updated since October of 2018, the website is still a joy " +
-                       "to read (as well as something of a graphical marvel). " +
-                       "As this is the first website I ever created, it holds a special " +
-                       "place in my heart."
-      link.href = "https://github.com/tylo-zane/portfolio/tree/master/dev-blog";
-    } else if (index == 'slide5') {
       skills.innerText = 'HTML, JavaScript, JQuery, CSS, Responsive Design';
       desc.innerText = "The Pokémon Deck Builder " +
                        "lets you search a complete database of Pokémon Trading Cards " +
