@@ -28,6 +28,7 @@
   function updateText(index) {
     let skills = document.getElementById('skills');
     let desc = document.getElementById('desc');
+    let extraDesc = document.getElementById('desc-2');
     let link = document.getElementById('view-code');
     if (index == 'slide1') {
       skills.innerText = 'HTML, JavaScript, PHP, CSS, Illustration';
@@ -37,6 +38,7 @@
                        "He will respond in different manners depending on the text you input. " +
                        "Using the 'emote' buttons in the lower right corner, you can " +
                        "even communicate with Apathy how he has made you feel.";
+      hideElement(extraDesc);
       link.href = "https://github.com/tylo-zane/portfolio/tree/master/convo-parade";
     } else if (index == 'slide2') {
       skills.innerText = 'HTML, JavaScript, React, Firebase';
@@ -44,8 +46,12 @@
                        "game with the goal of helping artists work through their artist's " +
                        "block. Using the account creation services provided by Firebase, users " +
                        "can register with the site and publish their own stories for others " +
-                       "to play. Completion of a story awards the player with prompts for"
-                       "assisting them in creating art.";
+                       "to play. Completion of a story awards players with prompts to " +
+                       "assist them in creating art.";
+      extraDesc.classList.remove('hidden');
+      extraDesc.innerText = "Contributions to this team-based project include UI for " +
+                            "the 'Story Select' Screen, account creation features, " +
+                            "and all interactions between with the server-side database.";
       link.href = "https://github.com/tylo-zane/portfolio/tree/master/project-block";
     } else if (index == 'slide3') {
       skills.innerText = 'HTML, JavaScript, JQuery, CSS, Responsive Design';
@@ -56,7 +62,18 @@
                        "upon them. However, because the Deck Builder is a " +
                        "work-in-progress, save slots are fixed to preset names and " +
                        "preview images.";
+      hideElement(extraDesc);
       link.href = "https://github.com/tylo-zane/portfolio/tree/master/deck-builder";
+    }
+  }
+
+ /**
+  * Hides the given DOM element
+  * @param {array} el - the DOM element to hide
+  */
+  function hideElement(el) {
+    if (!el.classList.contains("hidden")) {
+       el.classList.add("hidden");
     }
   }
 

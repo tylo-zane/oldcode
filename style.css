@@ -84,6 +84,10 @@ section {
   display: inline-block;
 }
 
+#desc-2 {
+  padding-top: 0;
+}
+
 /* 'Other' section */
 
 .container {
@@ -401,6 +405,11 @@ em {
     padding-right: 1rem;
   }
 
+}
+
+.hidden {
+  display: none;
+  position: absolute;
 }
 
 /* ANIMATION */
