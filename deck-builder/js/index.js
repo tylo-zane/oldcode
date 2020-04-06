@@ -10,25 +10,25 @@
       deckMetaData: [
          {
          'name': "Terraki-Mewtwo",
-         'image': "image/brock.png",
+         'image': "image/deck1.png",
          'type1': "psychic",
          'type2': "ground"
          },
          {
          'name': "Bright_Aura",
-         'image': "image/misty.png",
+         'image': "image/deck2.png",
          'type1': "water",
          'type2': "fairy"
          },
          {
          'name': "No_Surprises",
-         'image': "image/steven.png",
+         'image': "image/deck3.png",
          'type1': "dragon",
          'type2': "grass"
          },
          {
          'name': "Intimidation",
-         'image': "image/jiggly.png",
+         'image': "image/deck4.png",
          'type1': "fairy",
          'type2': "electric"
          }]

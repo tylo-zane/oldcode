@@ -417,6 +417,21 @@ em {
 
 }
 
+/* iPhone 5 */
+@media (max-width: 325px) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1.25em;
+  }
+
+
+
+}
+
 .hidden {
   display: none;
   position: absolute;
