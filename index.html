@@ -58,14 +58,14 @@
             <p><a href="https://project-block-11.firebaseapp.com/">Block</a></p>
           </div>
           <div class="item carousel-item" id="slide4">
-            <audioid = "player" src = "kalimba.mp3"></audio>
-            <div>
-               <buttononclick = "document.getElementById('player').play()">Play</button>
-               <buttononclick = "document.getElementById('player').pause()">Pause</button>
-               <buttononclick = "document.getElementById('player').volume += 0.2">Vol+</button>
-               <buttononclick = "document.getElementById('player').volume -= 0.2">Vol-</button>
+            <audio id="player" src="the_power.mp3">
+              Your browser does not support the audio element.
+            </audio>
+            <div id="controls">
+               <button id="play">Play</button>
+               <button id="pause" class = "hidden">Pause</button>
             </div>
-            <p>Bang!</a></p>
+            <p>The Power</p>
           </div>
         </div>
       </div>
