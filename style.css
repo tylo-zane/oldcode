@@ -397,8 +397,18 @@ em {
 /* Smartphones */
 @media (max-width: 480px) {
 
+  #about {
+    min-height: 0;
+    height: 70vh;
+    max-height: 510px;
+  }
+
   #about-portrait {
     z-index: -1;
+  }
+
+  #about-hover {
+
   }
 
   #about-hover p {
