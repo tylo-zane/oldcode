@@ -14,4 +14,4 @@ Conversation Parade is an experimental game allowing you to engage in discussion
 The Pokémon Deck Builder lets you search a complete API database of Pokémon Trading Cards to discover the perfect 'Mon for your dream deck. You can move cards to and from your virtual deck simply by clicking upon them.
 
 ### 3. Project Block
-Block is a choose-your-own adventure game with the goal of helping artists work through their creator's block. Using the account creation services provided by Firebase, users can register with the site and create their very own stories for others to play. Completion of a story awards the player with a prompt and color palette to assist them in creating art.
+Block is a choose-your-own adventure game with the goal of helping artists work through their artist's block. Using the account creation services provided by Firebase, users can register with the site and publish their own stories for others to play. Completion of a story awards players with prompts to assist them in creating art.
