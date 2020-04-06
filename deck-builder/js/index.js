@@ -28,7 +28,7 @@
          },
          {
          'name': "Intimidation",
-         'image': "image/lillie.png",
+         'image': "image/jiggly.png",
          'type1': "fairy",
          'type2': "electric"
          }]
@@ -153,7 +153,7 @@
 
   /**
    * Rejects all changes made to the user's tentative deck, keeping the deck in its
-   * most recently saved form. 
+   * most recently saved form.
    */
    function cancelNewCards() {
       app.tentative = [];
@@ -226,7 +226,7 @@
   /**
    * Helper function. Creates a DOM Element representation of a card's data.
    * @param {object} cardData - data object representing the card to render
-   * @returns {DOM element} card - the rendered element 
+   * @returns {DOM element} card - the rendered element
    */
    function renderCard(cardData) {
       let card = $("<img>");
@@ -261,7 +261,7 @@
          let deck = $('<div></div>');
          deck.addClass("deck-icon");
          deck.attr('id', deckData.name);
-         let header = renderHeader(deckData);      
+         let header = renderHeader(deckData);
          let heading = $('<h4>' + deckData.name.replace('_', ' ') + '</h4>');
          let image = renderDeckImage(deckData);
          let viewBtn = renderViewBtn();
@@ -269,7 +269,7 @@
          deck.append(header, heading, image, viewBtn, editBtn);
          $('.deck-container').append(deck);
       });
-      
+
      /**
       * Renders the preview card of a deck icon.
       * @param {object} deckData - data object representing specific deck
@@ -281,7 +281,7 @@
          image.attr('alt', deckData.name);
          return image;
       }
-   
+
      /**
       * Renders the header of a deck icon.
       * @param {object} deckData - data object representing specific deck
@@ -309,7 +309,7 @@
          output.attr('alt', deckData.number);
          return output;
       }
-   
+
      /**
       * Renders the delete button of a deck.
       * @returns {object} - the delete button for a specific deck icon
@@ -321,10 +321,10 @@
          deleteButton.addClass('delete-btn');
          return deleteButton;
       }
-   
+
      /**
       * Renders the view button of a deck icon.
-      * @returns {object} - the view button element 
+      * @returns {object} - the view button element
       */
       function renderViewBtn() {
          let output = $('<a></a>');
@@ -333,10 +333,10 @@
          output.addClass('view-btn');
          return output;
       }
-   
+
      /**
       * Renders the edit button of a deck icon.
-      * @returns {object} - the edit button element 
+      * @returns {object} - the edit button element
       */
       function renderEditBtn() {
          let output = $('<a></a>');
@@ -348,7 +348,7 @@
    }
 
   /**
-   * Toggles visibility of the loading symbol. 
+   * Toggles visibility of the loading symbol.
    */
    function toggleLoading() {
       $("#loading-symbol").toggleClass('hidden');

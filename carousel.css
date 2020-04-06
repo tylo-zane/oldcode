@@ -58,3 +58,16 @@
 .carousel .carousel-item:not(.active) .materialboxed {
   pointer-events: none;
 }
+
+/* Smartphones */
+@media (max-width: 480px) {
+
+  .carousel {
+    padding-top: 10%;
+  }
+
+  .carousel .carousel-item {
+    top: -6%;
+  }
+
+}
