@@ -400,7 +400,7 @@ em {
   #about {
     min-height: 0;
     height: 70vh;
-    max-height: 510px;
+    max-height: 500px;
   }
 
   #about-portrait {
