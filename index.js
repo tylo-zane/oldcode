@@ -100,8 +100,8 @@
          link.href = "https://github.com/tylo-zane/portfolio/tree/master/deck-builder";
       } else if (index == 'slide4') {
          skills.innerText = 'Musical composition & production';
-         desc.innerText = "The Power is a song demo that I started working on approximately one " +
-                          "year ago. Although intended to have vocals, I believe the " +
+         desc.innerText = "The Power is a demo that I started working on approximately two " +
+                          "months ago. Although intended to have vocals, I believe the " +
                           "song in its current state to be a good representation of my budding " +
                           "music production capabilities. Created using LMMS.";
          hideElement(extraDesc);
