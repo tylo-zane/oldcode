@@ -386,6 +386,8 @@ em {
 
   #about-hover h3 {
     padding-top: 1em;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+    padding-bottom: 0.1em;
   }
 
 }
@@ -449,12 +451,17 @@ em {
     z-index: -1;
   }
 
-  #about-hover {
-
-  }
-
   #about-hover p {
     padding-right: 1rem;
+  }
+
+}
+
+/* Galaxy S5 */
+@media (max-width: 365px) {
+
+  nav a {
+    font-size: 1.25em;
   }
 
 }
@@ -465,12 +472,6 @@ em {
   h1 {
     font-size: 1.5rem;
   }
-
-  nav a {
-    font-size: 1.25em;
-  }
-
-
 
 }
 
