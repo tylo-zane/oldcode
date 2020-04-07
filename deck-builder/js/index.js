@@ -28,7 +28,7 @@
          },
          {
          'name': "Intimidation",
-         'image': "image/jiggy.png",
+         'image': "image/jiggly.png",
          'type1': "fairy",
          'type2': "electric"
          }]
