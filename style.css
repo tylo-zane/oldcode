@@ -457,8 +457,8 @@ em {
 
 }
 
-/* Galaxy S5 */
-@media (max-width: 365px) {
+/* iPhone X */
+@media (max-width: 375px) {
 
   #about {
     margin-bottom: 2.5vh;
@@ -466,6 +466,19 @@ em {
 
   #about-hover {
     bottom: -2.5vh;
+  }
+
+}
+
+/* Galaxy S5 */
+@media (max-width: 365px) {
+
+  #about {
+    margin-bottom: 4vh;
+  }
+
+  #about-hover {
+    bottom: -4vh;
   }
 
 }
