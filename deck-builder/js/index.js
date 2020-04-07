@@ -10,21 +10,21 @@
       deckMetaData: [
          {
          'name': "Terraki-Mewtwo",
-         'image': "image/mew.png",
+         'image': "image/brock.png",
          'type1': "psychic",
-         'type2': "ground"
+         'type2': "none"
          },
          {
          'name': "Bright_Aura",
-         'image': "image/lapras.png",
+         'image': "image/misty.png",
          'type1': "water",
          'type2': "fairy"
          },
          {
          'name': "No_Surprises",
-         'image': "image/dragonite.png",
+         'image': "image/steven.png",
          'type1': "dragon",
-         'type2': "grass"
+         'type2': "none"
          },
          {
          'name': "Intimidation",
