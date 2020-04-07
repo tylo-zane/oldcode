@@ -460,8 +460,12 @@ em {
 /* Galaxy S5 */
 @media (max-width: 365px) {
 
-  nav a {
-    font-size: 1.25em;
+  #about {
+    margin-bottom: 2.5vh;
+  }
+
+  #about-hover {
+    bottom: -2.5vh;
   }
 
 }
