@@ -12,7 +12,7 @@
          'name': "Terraki-Mewtwo",
          'image': "image/brock.png",
          'type1': "psychic",
-         'type2': "none"
+         'type2': "ground"
          },
          {
          'name': "Bright_Aura",
@@ -24,11 +24,11 @@
          'name': "No_Surprises",
          'image': "image/steven.png",
          'type1': "dragon",
-         'type2': "none"
+         'type2': "grass"
          },
          {
          'name': "Intimidation",
-         'image': "image/jiggly.png",
+         'image': "image/lillie.png",
          'type1': "fairy",
          'type2': "electric"
          }]
