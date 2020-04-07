@@ -516,7 +516,8 @@ input { /* Search input box */
       }
 
       .left-panel .card {
-         animation: none;
+        -webkit-animation: none !important;
+        animation: none !important;
       }
 
       /* TYPOGRAPHY */
