@@ -387,7 +387,7 @@ input { /* Search input box */
 }
 
 @media (max-width: 768px) { /* For consistently visibile scrollbar on mobile */
-   
+
    ::-webkit-scrollbar {
       appearance: none;
       background-color: rgba(255, 255, 255, .25);
@@ -397,11 +397,11 @@ input { /* Search input box */
       background-color: rgba(0, 0, 0, .25);
       border-radius: 10px;
    }
-   
+
    ::-webkit-scrollbar:vertical {
       width: 12px;
    }
-   
+
    ::-webkit-scrollbar:horizontal {
       height: 12px;
    }
@@ -503,16 +503,20 @@ input { /* Search input box */
          animation: fadein 1.5s;
          -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
       }
-      
+
       @keyframes fadein {
          from { opacity: 0; }
          to   { opacity: 1; }
       }
-      
+
       /* Safari, Chrome and Opera > 12.1 */
       @-webkit-keyframes fadein {
          from { opacity: 0; }
          to   { opacity: 1; }
+      }
+
+      .left-panel .card {
+         animation-duration: 0s;
       }
 
       /* TYPOGRAPHY */
@@ -656,14 +660,14 @@ input { /* Search input box */
       }
 
       .deck-icon a:last-child {
-         margin-bottom: 0.5rem; 
+         margin-bottom: 0.5rem;
       }
 
       .deck-header img { /* Pokémon Type icons */
          height: 1.95rem;
          margin-left: .1rem;
       }
-      
+
       .deck-header img:first-child {
          margin-left: .75rem;
       }
@@ -675,11 +679,11 @@ input { /* Search input box */
          align-items: flex-start;
          padding-top: 0;
       }
-      
+
       #right-panel.deck-view .card {
          margin-left: 1rem;
       }
-      
+
       #right-panel .card:last-child {
          margin-bottom: 1rem;
       }
@@ -724,11 +728,11 @@ input { /* Search input box */
       margin-top: 0.25rem;
       margin-left: .25rem;
    }
-   
+
    .deck-header img:first-child {
       margin-left: .75rem;
    }
-   
+
 }
 
 .hidden {
