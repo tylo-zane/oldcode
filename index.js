@@ -1,6 +1,8 @@
 (function() {
    "use strict";
 
+   let playMusic = false;
+
    document.addEventListener('DOMContentLoaded', function () {
       initCarousel();
       window.addEventListener('resize', initCarousel);
@@ -30,12 +32,16 @@
       let play = document.getElementById('play');
       let pause = document.getElementById('pause');
       play.onclick = function() {
-         player.play()
-         pausePlaySwitch();
+         if (playMusic == true) {
+           player.play()
+           pausePlaySwitch();
+         }
       };
       pause.onclick = function() {
-         player.pause();
-         pausePlaySwitch();
+        if (playMusic == true) {
+          player.pause()
+          pausePlaySwitch();
+        }
       };
    }
 
@@ -56,6 +62,8 @@
       let desc = document.getElementById('desc');
       let extraDesc = document.getElementById('desc-2');
       let link = document.getElementById('view-code');
+      link.classList.remove('hidden');
+      playMusic = false;
       if (index == 'slide1') {
          skills.innerText = 'HTML, JavaScript, PHP, CSS, Illustration';
          desc.innerText = "Originally created for CSE 154 as an exercise in PHP programming. " +
@@ -94,7 +102,8 @@
          skills.innerText = 'Musical composition & production';
          desc.innerText = "Tentative";
          hideElement(extraDesc);
-         link.href = "";
+         hideElement(link);
+         playMusic = true;
       }
    }
 
