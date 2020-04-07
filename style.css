@@ -461,11 +461,11 @@ em {
 @media (max-width: 375px) {
 
   #about {
-    margin-bottom: 2.5vh;
+    margin-bottom: 3vh;
   }
 
   #about-hover {
-    bottom: -2.5vh;
+    bottom: -3vh;
   }
 
 }
@@ -474,11 +474,11 @@ em {
 @media (max-width: 365px) {
 
   #about {
-    margin-bottom: 4vh;
+    margin-bottom: 5vh;
   }
 
   #about-hover {
-    bottom: -4vh;
+    bottom: -5vh;
   }
 
 }
