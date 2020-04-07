@@ -88,15 +88,18 @@ section {
   padding-top: 0;
 }
 
-#play, #pause {
+#play, #pause, #music-icon {
   background-size: contain;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   position: absolute;
+  opacity: 50%;
+}
+
+#play, #pause {
   width: 40%;
   height: 50%;
   border: 0;
-  opacity: 50%;
 }
 
 #play {
@@ -105,6 +108,14 @@ section {
 
 #pause {
   background-image: url('img/pause.png');
+}
+
+#music-icon {
+  right: 5px;
+  top: 10px;
+  background-image: url('img/music.png');
+  width: 12.5%;
+  height: 12.5%;
 }
 
 #controls {
